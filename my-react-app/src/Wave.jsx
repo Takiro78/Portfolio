@@ -1,9 +1,10 @@
-import {easeInOut, motion} from "framer-motion";
+import {easeInOut, easeOut, motion} from "framer-motion";
 
 export default function Wave() {
     return(
        
-        <div>
+        <div className="wave-wrapper">
+            
             {/**BACK WAVE vertical movement */}
             <motion.div
                 className="wave-container"
@@ -82,7 +83,7 @@ export default function Wave() {
                 <motion.div 
                     className = "wave-front"
                     animate = {{x: ["0%", "-100%"]}}
-                    transition={{duration: 15 , ease: "linear",repeat:Infinity}}
+                    transition={{duration: 18 , ease: "linear",repeat:Infinity}}
 
                 >
                     <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none">
@@ -100,10 +101,21 @@ export default function Wave() {
                     </svg>
                 </motion.div>
 
+                
+
     
 
 
             </motion.div>
+
+            <motion.div
+                    className="wave-bg"
+                    initial={{y:0}}
+                    animate={{y:800}}
+                    transition={{duration:5, ease: easeInOut}}
+                >
+
+                </motion.div>
 
         </div>
     )    
