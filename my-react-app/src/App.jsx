@@ -1,7 +1,11 @@
+import {motion} from "framer-motion";
+
 
 import './App.css'
+import Wave from "./Wave";
 
-import {motion} from "framer-motion";
+
+
 
 export default function App() {
   return (
@@ -12,6 +16,7 @@ export default function App() {
         maxWidth: "800px",
         margin: "0 auto"
       }}>
+        <Wave />
 
         {/* header*/}
         <motion.h1
