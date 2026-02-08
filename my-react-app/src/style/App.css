@@ -11,16 +11,23 @@ body {
   font-family: 'Inter', sans-serif;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow-y: scroll;
+ 
   background: #fafafa;
   color: #222;
 }
 
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
 /* CONTAINERS ----------------------------------------------------- */
-.container {
+/* .container {
+  height: fit-content;
   width: 100%;
   overflow-x: hidden;
-}
+  
+} */
 
 .page-contents {
   height: 70vh;
@@ -33,7 +40,8 @@ body {
 
 /* SECTIONS ------------------------------------------------------- */
 .section {
-  height: 100vh;
+  /* min-height: 100vh; */
+  height: auto;
   width: 100%;
   scroll-snap-align: start;
 
