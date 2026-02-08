@@ -1,7 +1,10 @@
 import {easeInOut, easeOut, motion} from "framer-motion";
 
-import "./wave.css"
+import "./style/wave.css"
 export default function Wave() {
+
+    
+
     return(
        
         <div className="wave-wrapper">
@@ -9,9 +12,9 @@ export default function Wave() {
             {/**BACK WAVE vertical movement */}
             <motion.div
                 className="wave-container"
-                initial = {{y:-150}}
+                initial = {{y:-100}}
                 animate = {{y:600}}
-                transition={{ duration:5, ease:easeInOut}}
+                transition={{ duration:4, ease:easeInOut}}
             >
 
                 {/* *horizontal movement */}
@@ -42,9 +45,9 @@ export default function Wave() {
                 {/**middle WAVE vertical movement */}
             <motion.div
                 className="wave-container"
-                initial = {{y:-150}}
+                initial = {{y:-100}}
                 animate = {{y:630}}
-                transition={{ duration:5, ease:easeInOut}}
+                transition={{ duration:4, ease:easeInOut}}
             >
 
                 {/* *horizontal movement */}
@@ -75,9 +78,9 @@ export default function Wave() {
                 {/**BACK WAVE vertical movement */}
             <motion.div
                 className="wave-container"
-                initial = {{y:-150}}
+                initial = {{y:-100}}
                 animate = {{y:660}}
-                transition={{ duration:5, ease:easeInOut}}
+                transition={{ duration:4, ease:easeInOut}}
             >
 
                 {/* *horizontal movement */}
@@ -111,14 +114,14 @@ export default function Wave() {
             </motion.div>
 
             <motion.div
-                    className="wave-bg"
-                    initial={{y:0}}
-                    animate={{y:800}}
-                    transition={{duration:5, ease: easeInOut}}
-                    fill="#4fc3f7"
-                >
+                className="wave-bg"
+                initial={{ y: 0, height: "100vh" }}
+                animate={{ y: 800, height: "15vh" }}
+                transition={{ duration: 4, ease: easeInOut }}
+                />
 
-                </motion.div>
+
+               
 
         </div>
     )    
