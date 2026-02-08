@@ -1,0 +1,65 @@
+/* NAV CONTAINER */
+.nav {
+  background: #111;
+  padding: 0.5rem 1rem;
+}
+
+/* UL RESET + FLEX LAYOUT */
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* NAV ITEMS */
+.nav li {
+  position: relative;
+  padding: 0.5rem;
+  color: #eee;
+  cursor: pointer;
+
+  /* smooth “Framer” animation feel */
+  transition: 
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* HOVER EFFECT — SCALE + COLOR FADE */
+.nav li:hover {
+  color: #7ef57e;
+  transform: translateY(-2px);
+}
+
+/* UNDERLINE ANIMATION (Framer style) */
+.nav li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #7ef57e;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* OPTIONAL: ACTIVE STATE */
+.nav li.active {
+  color: #7ef57e;
+}
+
+.nav li.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

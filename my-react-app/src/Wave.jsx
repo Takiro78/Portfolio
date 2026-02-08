@@ -1,5 +1,6 @@
 import {easeInOut, easeOut, motion} from "framer-motion";
 
+import "./wave.css"
 export default function Wave() {
     return(
        
@@ -56,13 +57,13 @@ export default function Wave() {
                     <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none">
                     <path
                         d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
-                        fill="#4fc3f7"
+                        fill="#2e7bce"
                     />
                     
                     {/* second identical wave shifted right */}
                     <path
                         d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
-                        fill="#4fc3f7"
+                        fill="#2e7bce"
                         transform="translate(1200, 0)"
                     />
                     </svg>
@@ -89,13 +90,14 @@ export default function Wave() {
                     <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none">
                     <path
                         d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
-                        fill="#4fc3f7"
+                        fill="#0848b7"
+
                     />
                     
                     {/* second identical wave shifted right */}
                     <path
                         d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
-                        fill="#4fc3f7"
+                        fill="#0848b7"
                         transform="translate(1200, 0)"
                     />
                     </svg>
@@ -113,6 +115,7 @@ export default function Wave() {
                     initial={{y:0}}
                     animate={{y:800}}
                     transition={{duration:5, ease: easeInOut}}
+                    fill="#4fc3f7"
                 >
 
                 </motion.div>
