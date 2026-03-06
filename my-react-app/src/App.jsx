@@ -1,11 +1,18 @@
 import {motion} from "framer-motion";
+import {Routes, Route} from "react-router-dom";
 
 
 import './style/App.css'
 import Wave from "./Components/wave/Wave";
 import Nav from "./Components/nav/Nav";
 
+function Home() {
+  return <h1>Home</h1>;
+}
 
+function Projects() {
+  return <h1>Projects</h1>;
+}
 
 
 export default function App() {
@@ -33,6 +40,10 @@ export default function App() {
        </div>
 
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
         
 
 
