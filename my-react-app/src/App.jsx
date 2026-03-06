@@ -2,8 +2,8 @@ import {motion} from "framer-motion";
 
 
 import './style/App.css'
-import Wave from "./Wave";
-import Nav from "./Nav";
+import Wave from "./Components/wave/Wave";
+import Nav from "./Components/nav/Nav";
 
 
 

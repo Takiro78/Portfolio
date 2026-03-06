@@ -1,6 +1,6 @@
 import {easeInOut, easeOut, motion} from "framer-motion";
 
-import "./style/wave.css"
+import "./wave.css"
 export default function Wave() {
 
     
