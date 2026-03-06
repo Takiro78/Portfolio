@@ -13,7 +13,7 @@ export default function Nav(){
                     <li>Home</li>
                     <li>LinkedIn</li>
                     <li>Projects</li>
-                    <li>Git</li>
+                    <li><a href="https://github.com/Takiro78">Git</a></li>
                 </ul>
             
 
