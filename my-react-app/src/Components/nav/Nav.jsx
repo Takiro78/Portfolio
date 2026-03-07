@@ -6,7 +6,7 @@ export default function Nav() {
     <div className="nav">
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/gabriel-mathura-057383276/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><a href="https://github.com/Takiro78" target="_blank" rel="noopener noreferrer">Git</a></li>
       </ul>

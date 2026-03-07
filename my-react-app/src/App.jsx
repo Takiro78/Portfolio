@@ -5,14 +5,12 @@ import {Routes, Route} from "react-router-dom";
 import './style/App.css'
 
 import Home from "./pages/home/Home.jsx";
-import Wave from "./Components/wave/Wave";
+import Projects from "./pages/projects/Projects.jsx";
 import Nav from "./Components/nav/Nav";
 import NotFound from "./pages/notfound/NotFound.jsx"
 
 
-function Projects() {
-  return <h1>Projects</h1>;
-}
+
 
 
 export default function App() {
