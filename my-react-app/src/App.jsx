@@ -7,6 +7,7 @@ import './style/App.css'
 import Home from "./pages/home/Home.jsx";
 import Wave from "./Components/wave/Wave";
 import Nav from "./Components/nav/Nav";
+import NotFound from "./pages/notfound/NotFound.jsx"
 
 
 function Projects() {
@@ -26,6 +27,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<NotFound />}  />
       </Routes>
         
 
