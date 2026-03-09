@@ -1,79 +1,83 @@
-/* GENERAL RESET -------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*!* GENERAL RESET -------------------------------------------------- *!*/
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
 
 body {
-  background-color: green;
-  height: 100%;
-  font-family: 'Inter', sans-serif;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
- 
-  background: #fafafa;
-  color: #222;
+    margin: 0;
+/*  background-color: green;*/
+/*  height: 100%;*/
+/*  font-family: 'Inter', sans-serif;*/
+/*  scroll-snap-type: y mandatory;*/
+/*  scroll-behavior: smooth;*/
+/* */
+/*  background: #fafafa;*/
+/*  color: #222;*/
 }
 
-html, body {
-  overflow: hidden;
-  height: 100%;
-}
+/*html, body {*/
+/*  overflow: hidden;*/
+/*  height: 100%;*/
+/*}*/
 
-/* CONTAINERS ----------------------------------------------------- */
-/* .container {
-  height: fit-content;
-  width: 100%;
-  overflow-x: hidden;
-  
-} */
+/*!* CONTAINERS ----------------------------------------------------- *!*/
+/*!* .container {*/
+/*  height: fit-content;*/
+/*  width: 100%;*/
+/*  overflow-x: hidden;*/
+/*  */
+/*} *!*/
 
 .page-contents {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  /* padding: 2rem; */
+/*  height: 70vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  gap: 4rem;*/
 }
 
-/* SECTIONS ------------------------------------------------------- */
+/*!* SECTIONS ------------------------------------------------------- *!*/
 .section {
-  /* min-height: 100vh; */
+/*  !* min-height: 100vh; *!*/
   height: auto;
-  width: 100%;
-  scroll-snap-align: start;
+  width: auto;
+    padding: 2rem;
+
+/*  scroll-snap-align: start;*/
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
 
-  padding: 2rem;
+/*  padding: 2rem;*/
 }
 
-.hero {
-  text-align: center;
+.hero.section{
+    flex-flow: column;
+    text-align: center;
 }
 
-.hero h1 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  margin-bottom: 2rem;
-}
+/*.hero h1 {*/
+/*  font-size: clamp(2rem, 4vw, 3.5rem);*/
+/*  font-weight: 800;*/
+/*  letter-spacing: 0.5px;*/
+/*  margin-bottom: 2rem;*/
+/*}*/
 
-/* BANNER --------------------------------------------------------- */
+/*!* BANNER --------------------------------------------------------- *!*/
 .banner {
   width: 100%;
-  max-width: 900px;
+
   display: flex;
   justify-content: center;
 }
 
 .banner-img {
   width: 100%;
+    max-width: 900px;
   max-height: 80vh;
   object-fit: contain;
   border-radius: 12px;
@@ -82,3 +86,9 @@ html, body {
   /* box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12); */
 }
 
+
+.about-me{
+    background-color: #0848b7;
+    /*background-color: red;*/
+
+}

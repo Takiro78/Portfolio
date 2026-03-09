@@ -1,43 +1,69 @@
+.wave-wrapper {
+  display: grid;
+  width: 100%;
+  z-index: 1;
+  margin: 0px;
+}
+
+
 .wave-container {
-  position: absolute;
+  /*position: absolute;*/
+.wave-path {
+  height: 100%;
+  width: 100%;
+}
+
   width: 100%;
   overflow: hidden;
   line-height: 0;
   top: 0;
   left: 0;
+  border: black solid 15px;
+
 }
+
+
+.wave {
+  grid-row: 1;
+  grid-column: 1;
+  height: 80px;         /* adjust to taste */
+  overflow: hidden;     /* ← this is the critical missing piece */
+  position: relative;
+}
+
+.wave > div {           /* framer-motion wrapper */
+  height: 100%;
+}
+
 
 .wave-svg {
   width: 200%;
-  height: 180px;
+  height: 100%;         /* ← makes SVG fill container height */
+  display: block;
+  overflow: hidden;
 }
 
-.wave-back {
-  
-  z-index: 1;
+
+.wave-path {
+  height: 100%;
+  width: 100%;
 }
 
-.wave-mid {
-  
-  z-index: 2;
-}
-
-.wave-front {
-  
-  z-index: 3;
-}
-
-.wave-wrapper {
-    width: 100%;
-    z-index: 1;
-    margin: 0%;
-}
+.wave.back  { transform: translateY(0px); }
+.wave.mid   { transform: translateY(10px); }
+.wave.front { transform: translateY(20px); }
 
 .wave-bg {
   background-color: #0848b7;
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
   z-index: 0; /* important */
 }
+
+
+
+/*---------------------------------------------------*/
+
+
