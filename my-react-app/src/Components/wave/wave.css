@@ -3,6 +3,8 @@
   width: 100%;
   z-index: 1;
   margin: 0px;
+  /*border: red solid 15px;*/
+
 }
 
 
@@ -52,10 +54,13 @@
 .wave-bg {
   background-color: #0848b7;
   width: 100%;
-  /*position: absolute;*/
+  /*position: fixed;*/
   top: 0;
   left: 0;
+  /*border: yellow solid 10px;*/
   z-index: 0; /* important */
+
+
 }
 
 

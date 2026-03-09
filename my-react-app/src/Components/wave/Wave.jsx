@@ -6,7 +6,7 @@ export default function Wave() {
 
 
     return(
-
+<>
         <div className="wave-wrapper">
             
             {/**BACK WAVE vertical movement */}
@@ -25,7 +25,7 @@ export default function Wave() {
                         transition={{duration: 10 , ease: "linear",repeat:Infinity}}
 
                     >
-                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="xMidYMid slice">
+                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none">
                         <path
                             className="wave-path"
                             d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
@@ -63,7 +63,7 @@ export default function Wave() {
                         transition={{duration: 10 , ease: "linear",repeat:Infinity}}
 
                     >
-                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="xMidYMid slice">
+                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none">
                         <path
                             d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
                             fill="#2e7bce"
@@ -98,7 +98,7 @@ export default function Wave() {
                         transition={{duration: 18 , ease: "linear",repeat:Infinity}}
 
                     >
-                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="xMidYMid slice">
+                        <svg className="wave-svg" viewBox="0 0 2400 150" preserveAspectRatio="none ">
                             <path
                                 d="M0 80 C 100 40, 200 120, 300 80 C 400 40, 500 120, 600 80 C 700 40, 800 120, 900 80 C 1000 40, 1100 120, 1200 80 L 1200 150 L 0 150 Z"
                                 fill="#0848b7"
@@ -115,11 +115,15 @@ export default function Wave() {
                     </motion.div>
                 </div>
 
+
+
             </motion.div>
 
 
 
 
         </div>
+
+        </>
     )    
 }

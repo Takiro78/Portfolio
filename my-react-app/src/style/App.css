@@ -88,7 +88,14 @@ body {
 
 
 .about-me{
-    background-color: #0848b7;
+    /*background-color: #0848b7;*/
     /*background-color: red;*/
+    /*border: black solid 2px;*/
 
+}
+
+.bottom{
+    background-color: #0848b7;
+    /*margin-top: 5px;*/
+    z-index: 1;
 }
