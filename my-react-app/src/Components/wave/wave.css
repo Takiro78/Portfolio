@@ -52,7 +52,7 @@
 .wave.front { transform: translateY(20px); }
 
 .wave-bg {
-  background-color: #0848b7;
+  background-image: linear-gradient(to bottom, #0848b7, #134cb5);
   width: 100%;
   /*position: fixed;*/
   top: 0;
@@ -63,7 +63,11 @@
 
 }
 
+.widget.about-me{
+  background-color: #4fc3f7;
+  /*box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);*/
 
+}
 
 /*---------------------------------------------------*/
 
