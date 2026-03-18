@@ -107,3 +107,14 @@ body {
     display: flex;
 
 }
+
+.boat-container{
+    /*overflow: hidden;*/
+    position: relative;
+    transform: translateY(60px);
+}
+
+.boat{
+    width: 75px;
+    height: 75px;
+}

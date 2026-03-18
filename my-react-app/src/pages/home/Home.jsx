@@ -11,13 +11,54 @@ export default function Home(){
               <div className="hero section">
                   <h1>Welcom To Gabriel's Fabulous Portfolio</h1>
                   <div className="banner" >
-                      <img className = "banner-img" src="Cayman4.png" style={{ width: "100%", height: "auto" }} />
+                      {/*<img className = "banner-img" src="Cayman4.png" style={{ width: "100%", height: "auto" }} />*/}
                   </div>
               </div>
+
+
+              <div className="boat-container">
+                  <motion.div
+                      animate={{
+                          x: ["-100%", "100vw"],
+                          y: [0, -10, 0],
+                          rotate: [ -4, 4,-4 ]   // ← tilt left/right
+                      }}
+                      transition={{
+                          x: {
+                              duration: 50,
+                              ease: "linear",
+                              repeat: Infinity
+                          },
+                          y: {
+                              duration: 3.77,
+                              ease: "easeInOut",
+                              repeat: Infinity
+                          },
+                          rotate: {
+                              duration: 3.77,
+                              ease: "easeInOut",
+                              repeat: Infinity
+                          }
+                      }}
+                      style={{ position: "absolute", bottom: 0 }}
+                  >
+                      <img className="boat" src="sailboat.svg" />
+                  </motion.div>
+
+              </div>
+
 
               <Wave />
 
               <div className = "bottom">
+
+
+
+
+
+
+
+
                   <motion.div
                       className="wave-bg"
                       initial={{ y: -750, height: "100vh" }}
